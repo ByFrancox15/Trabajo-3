@@ -1,0 +1,373 @@
+/* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  font-family: 'Bebas Neue', sans-serif;
+  color: whitesmoke; }
+
+/* ESTILOS DE HEADER */
+h1 {
+  color: whitesmoke;
+  font-family: Bebas Neue;
+  font-size: 60px;
+  text-align: center;
+  background-color: #EEDEAD;
+  margin: 1.5rem;
+  padding: 3rem;
+  border: 3px solid whitesmoke; }
+
+header nav ul li {
+  list-style: none;
+  margin: 0 0 40px 0; }
+
+header nav ul li a {
+  text-decoration: none;
+  margin-right: 60px; }
+
+.contenedor {
+  /* Flex */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: 30px; }
+
+.aparicion {
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+/* ESTILOS DE MAIN */
+.galaxia-1 {
+  display: flex;
+  justify-content: center; }
+
+.galaxia-1 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.texto-derecha {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 6rem;
+  text-align: center;
+  font-size: 3rem; }
+
+.via-lactea {
+  display: flex;
+  justify-content: center; }
+
+.via-lactea img {
+  margin: 2rem;
+  width: 600px;
+  height: auto;
+  margin-top: 200px; }
+
+.texto-derecho {
+  margin-left: 10px;
+  margin-top: 200px;
+  padding: 5rem;
+  text-align: center;
+  font-size: 3rem; }
+
+/* MAIN DE SISTEMA SOLAR */
+.planetas-terrestres1 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planetas-terrestres1 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.texto-mercurio {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 4.5rem;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+.planetas-terrestres2 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planetas-terrestres2 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.Texto-Venus {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 4.5rem;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+.planetas-terrestres3 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planetas-terrestres3 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.Texto-Tierra {
+  margin-left: 20px;
+  margin-top: 50px;
+  padding: 7rem;
+  text-align: center;
+  font-size: 2.7rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+.planetas-terrestres4 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planetas-terrestres4 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.Texto-Marte {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+.planetas-gaseosos1 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planetas-gaseosos1 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.Texto-Jupiter {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 6rem;
+  text-align: center;
+  font-size: 2.8rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+.planetas-gaseosos2 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planetas-gaseosos2 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.Texto-Saturno {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 5rem;
+  text-align: center;
+  font-size: 2.4rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+.planetas-gaseosos3 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planetas-gaseosos3 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.Texto-Urano {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 4.5rem;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+.planetas-gaseosos4 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planetas-gaseosos4 img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.Texto-Neptuno {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 4.6rem;
+  text-align: center;
+  font-size: 1.9rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+@media screen and (min-widht: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    column-gap: 1rem; } }
+
+/* MAIN DE TIERRA */
+.planeta-tierra {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.planeta-tierra img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.derecha-tierra {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 6rem;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+/* MAIN DE LUNA */
+.luna {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.luna img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.derecha-luna {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+/* MAIN DE SOL */
+.sol {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
+.sol img {
+  margin: 2rem;
+  width: 600px;
+  height: auto; }
+
+.derecha-sol {
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 5rem;
+  text-align: center;
+  font-size: 2.4rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+.card {
+  margin: 4px;
+  align-items: center;
+  text-align: center; }
+
+.card-body {
+  padding: 35px; }
+
+.card1 {
+  margin: 10px; }
+
+.card-body1 {
+  padding: 5px; }
+
+/* ESTILOS DE FOOTER */
+footer {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  position: absolute;
+  width: 100%;
+  margin-top: 100px; }
+
+.derechos {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 1rem; }
+
+.redes-sociales {
+  display: flex;
+  justify-content: center; }
+
+.redes-sociales a {
+  margin: 0 5px; }
+
+.redes-sociales img {
+  width: 30px;
+  height: 30px; }
