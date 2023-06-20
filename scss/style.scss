@@ -6,22 +6,17 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: black;
-    font-family: 'Bebas Neue', sans-serif;
-    color: whitesmoke;
-}
+// IMPORT
+@import "html/secundarios";
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* ESTILOS DE HEADER */
 
 h1{
-    color: whitesmoke;
     font-family: Bebas Neue;
     font-size: 60px;
     text-align: center;
-    background-color: #EEDEAD;
     margin: 1.5rem;
     padding: 3rem;
     border: 3px solid whitesmoke;
@@ -48,9 +43,9 @@ header nav ul li a{
 .aparicion{
     opacity: 0;
     animation: aparecer 1s ease forwards;
-  }
+}
   
-  @keyframes aparecer{
+@keyframes aparecer{
     from{
       opacity: 0; 
       transform: translateY(-20px); 
@@ -59,7 +54,7 @@ header nav ul li a{
       opacity: 1; 
       transform: translateY(0); 
     }
-  }
+}
 
 /* ESTILOS DE MAIN */
 
@@ -69,9 +64,7 @@ header nav ul li a{
 }
 
 .galaxia-1 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .texto-derecha{
@@ -80,6 +73,23 @@ header nav ul li a{
     padding: 6rem;
     text-align: center;
     font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .texto-derecha {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .galaxia-1 img {
+    margin: 0.5rem;
+  }
+
+  .texto-derecha {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
 }
 
 .via-lactea{
@@ -104,295 +114,123 @@ header nav ul li a{
 
 /* MAIN DE SISTEMA SOLAR */
 
-.planetas-terrestres1{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
-}
-
 .planetas-terrestres1 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .texto-mercurio{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 4.5rem;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    @include forma (4.5rem, 2rem)
 }
 
-.planetas-terrestres2{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
+@media (max-width: 768px) {
+  .texto-mercurio {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .planetas-terrestres1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .planetas-terrestres1 img {
+    margin: 0.5rem;
+  }
+
+  .texto-mercurio {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
 
 .planetas-terrestres2 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .Texto-Venus{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 4.5rem;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-.planetas-terrestres3{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
+    @include forma (4.5, 2.3rem)
 }
 
 .planetas-terrestres3 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
-
 
 .Texto-Tierra{
-    margin-left: 20px;
-    margin-top: 50px;
-    padding: 7rem;
-    text-align: center;
-    font-size: 2.7rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    @include forma (7rem, 2.7rem)
 }
-.planetas-terrestres4{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
-}
-
 
 .planetas-terrestres4 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .Texto-Marte{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 4rem;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-.planetas-gaseosos1{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
+    @include forma (4rem, 2rem)
 }
 
 .planetas-gaseosos1 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .Texto-Jupiter{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 6rem;
-    text-align: center;
-    font-size: 2.8rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-.planetas-gaseosos2{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
+    @include forma (6rem, 2.8rem)
 }
 
 .planetas-gaseosos2 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
-
 
 .Texto-Saturno{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 5rem;
-    text-align: center;
-    font-size: 2.4rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-.planetas-gaseosos3{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
+    @include forma (5rem, 2.4rem)
 }
 
 .planetas-gaseosos3 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .Texto-Urano{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 4.5rem;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-.planetas-gaseosos4{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
+    @include forma (4.5rem, 2rem)
 }
 
 .planetas-gaseosos4 img{
-    margin: 2rem;
-    width: 600px;
-    height: auto; 
+    @include medida 
 }
 
 .Texto-Neptuno{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 4.6rem;
-    text-align: center;
-    font-size: 1.9rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-@media screen and (min-widht:600px){
-    .contenedor{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50%);
-        column-gap: 1rem;
-    }
+    @include forma (4.6rem, 1.9rem)
 }
 
 /* MAIN DE TIERRA */
 
-.planeta-tierra{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
-}
-
 .planeta-tierra img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .derecha-tierra{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 6rem;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    @include forma (6rem, 3rem)
 }
 
 /* MAIN DE LUNA */
 
-.luna{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
-}
-
 .luna img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .derecha-luna{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 5rem;
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    @include forma (5rem, 2.5rem)
 }
 
 /* MAIN DE SOL */
 
-.sol{
-    display: flex;
-    justify-content: center;
-    background-color: #EEDEAD;
-    border: 5px solid whitesmoke;
-    margin: 2rem;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
-}
-
 .sol img{
-    margin: 2rem;
-    width: 600px;
-    height: auto;
+    @include medida
 }
 
 .derecha-sol{
-    margin-left: 10px;
-    margin-top: 50px;
-    padding: 5rem;
-    text-align: center;
-    font-size: 2.4rem;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    @include forma (5rem, 2.4rem)
 }
 
 .card{

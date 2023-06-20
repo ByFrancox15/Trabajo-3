@@ -5,18 +5,29 @@
   padding: 0;
   box-sizing: border-box; }
 
+.planeta-tierra, .luna, .sol, .planetas-terrestres1, .planetas-terrestres2, .planetas-terrestres3, .planetas-terrestres4, .planetas-gaseosos1, .planetas-gaseosos2, .planetas-gaseosos3, .planetas-gaseosos4 {
+  display: flex;
+  justify-content: center;
+  background-color: #EEDEAD;
+  border: 5px solid whitesmoke;
+  margin: 2rem;
+  opacity: 0;
+  animation: aparecer 1s ease forwards; }
+
 body {
   background-color: black;
   font-family: 'Bebas Neue', sans-serif;
-  color: whitesmoke; }
+  color: #f6f1de; }
+
+h1 {
+  color: #f6f1de;
+  background-color: #EEDEAD; }
 
 /* ESTILOS DE HEADER */
 h1 {
-  color: whitesmoke;
   font-family: Bebas Neue;
   font-size: 60px;
   text-align: center;
-  background-color: #EEDEAD;
   margin: 1.5rem;
   padding: 3rem;
   border: 3px solid whitesmoke; }
@@ -65,6 +76,17 @@ header nav ul li a {
   text-align: center;
   font-size: 3rem; }
 
+@media (max-width: 768px) {
+  .texto-derecha {
+    font-size: 1.5rem; } }
+
+@media (max-width: 480px) {
+  .galaxia-1 img {
+    margin: 0.5rem; }
+  .texto-derecha {
+    padding: 1rem;
+    font-size: 1.2rem; } }
+
 .via-lactea {
   display: flex;
   justify-content: center; }
@@ -83,15 +105,6 @@ header nav ul li a {
   font-size: 3rem; }
 
 /* MAIN DE SISTEMA SOLAR */
-.planetas-terrestres1 {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
-
 .planetas-terrestres1 img {
   margin: 2rem;
   width: 600px;
@@ -105,14 +118,22 @@ header nav ul li a {
   font-size: 2rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
 
-.planetas-terrestres2 {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
+@media (max-width: 768px) {
+  .texto-mercurio {
+    font-size: 1.2rem;
+    padding: 1.5rem; } }
+
+@media (max-width: 480px) {
+  .planetas-terrestres1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .planetas-terrestres1 img {
+    margin: 0.5rem; }
+  .texto-mercurio {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem; } }
 
 .planetas-terrestres2 img {
   margin: 2rem;
@@ -122,19 +143,10 @@ header nav ul li a {
 .Texto-Venus {
   margin-left: 10px;
   margin-top: 50px;
-  padding: 4.5rem;
+  padding: 4.5;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
-
-.planetas-terrestres3 {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
 
 .planetas-terrestres3 img {
   margin: 2rem;
@@ -142,21 +154,12 @@ header nav ul li a {
   height: auto; }
 
 .Texto-Tierra {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 50px;
   padding: 7rem;
   text-align: center;
   font-size: 2.7rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
-
-.planetas-terrestres4 {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
 
 .planetas-terrestres4 img {
   margin: 2rem;
@@ -171,15 +174,6 @@ header nav ul li a {
   font-size: 2rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
 
-.planetas-gaseosos1 {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
-
 .planetas-gaseosos1 img {
   margin: 2rem;
   width: 600px;
@@ -192,15 +186,6 @@ header nav ul li a {
   text-align: center;
   font-size: 2.8rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
-
-.planetas-gaseosos2 {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
 
 .planetas-gaseosos2 img {
   margin: 2rem;
@@ -215,15 +200,6 @@ header nav ul li a {
   font-size: 2.4rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
 
-.planetas-gaseosos3 {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
-
 .planetas-gaseosos3 img {
   margin: 2rem;
   width: 600px;
@@ -236,15 +212,6 @@ header nav ul li a {
   text-align: center;
   font-size: 2rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
-
-.planetas-gaseosos4 {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
 
 .planetas-gaseosos4 img {
   margin: 2rem;
@@ -259,22 +226,7 @@ header nav ul li a {
   font-size: 1.9rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
 
-@media screen and (min-widht: 600px) {
-  .contenedor {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 50%);
-    column-gap: 1rem; } }
-
 /* MAIN DE TIERRA */
-.planeta-tierra {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
-
 .planeta-tierra img {
   margin: 2rem;
   width: 600px;
@@ -289,15 +241,6 @@ header nav ul li a {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
 
 /* MAIN DE LUNA */
-.luna {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
-
 .luna img {
   margin: 2rem;
   width: 600px;
@@ -312,15 +255,6 @@ header nav ul li a {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
 
 /* MAIN DE SOL */
-.sol {
-  display: flex;
-  justify-content: center;
-  background-color: #EEDEAD;
-  border: 5px solid whitesmoke;
-  margin: 2rem;
-  opacity: 0;
-  animation: aparecer 1s ease forwards; }
-
 .sol img {
   margin: 2rem;
   width: 600px;

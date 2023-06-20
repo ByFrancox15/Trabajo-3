@@ -1,0 +1,61 @@
+// Importar los archivos secundarios de SASS
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+body{
+    background-color: $color-boton;
+    font-family: 'Bebas Neue', sans-serif;
+    color: $color-secundario;
+}
+
+h1{
+    color: $color-secundario;
+    background-color: $color-principal;
+}
+
+.planeta-tierra{
+    @extend %fondo;
+}
+
+.luna{
+    @extend %fondo;
+}
+
+.sol{
+    @extend %fondo;
+}
+
+.planetas-terrestres1{
+    @extend %fondo;
+}
+
+.planetas-terrestres2{
+    @extend %fondo;
+}
+
+.planetas-terrestres3{
+    @extend %fondo;
+}
+
+.planetas-terrestres4{
+    @extend %fondo;
+} 
+
+.planetas-gaseosos1{
+    @extend %fondo;
+} 
+
+.planetas-gaseosos2{
+    @extend %fondo;
+}
+
+.planetas-gaseosos3{
+    @extend %fondo;
+} 
+
+.planetas-gaseosos4{
+    @extend %fondo;
+}

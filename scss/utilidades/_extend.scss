@@ -1,0 +1,11 @@
+// Extend
+
+%fondo{
+    display: flex;
+    justify-content: center;
+    background-color: #EEDEAD;
+    border: 5px solid whitesmoke;
+    margin: 2rem;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+}
